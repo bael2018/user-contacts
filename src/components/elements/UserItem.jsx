@@ -27,7 +27,7 @@ const UserItem = ({ user }) => {
                     <span>Phone:</span> ${user.phone}
                 </p>
                 <div>
-                    <button onClick={() => navigate(`/${id}`)}>
+                    <button onClick={() => navigate(`/user/${id}`)}>
                         read more
                     </button>
                     <button onClick={editModalHandler}>edit</button>

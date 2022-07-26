@@ -12,7 +12,7 @@ export const appRoutes = [
     {
         id: 2,
         element: <SingleUser/>,
-        path: '/:userId'
+        path: '/user/:userId'
     },
     {
         id: 3,

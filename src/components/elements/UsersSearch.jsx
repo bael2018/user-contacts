@@ -26,7 +26,7 @@ const UsersSearch = () => {
     };
 
     const inputNavigateHandler = (id) => {
-        navigate(`/${id}`)
+        navigate(`/user/${id}`)
         setIsVisible(true)
     };
 
