@@ -1,0 +1,71 @@
+@import '../colors.scss';
+
+.users_sort{
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 570px) {
+        &{
+            width: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    span{
+        color: #fff;
+        margin-right: 10px;
+    }
+
+    &__wrapper{
+        width: 100px;
+        height: 30px;
+        position: relative;
+        border: 1px solid #fff;
+
+        h4{
+            position: absolute;
+            width: 100%;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 500;
+            top: 0;
+            height: 100%;
+            margin: 0;
+            cursor: pointer;
+            color: #fff;
+        }
+
+        &:hover div{
+            display: block;
+        }
+
+        div{
+            position: absolute;
+            width: 100%;
+            top: 30px;
+            background: white;
+            display: none;
+            outline: 1px solid $--app-main-color;
+
+            p{
+                display: flex;
+                margin: 0;
+                transition: .3s;
+                padding: 10px 0px;
+                cursor: pointer;
+                justify-content: center;
+                border-top: 1px solid $--app-main-color;
+
+                &:hover{
+                    background: $--app-main-color;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

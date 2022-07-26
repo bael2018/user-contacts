@@ -1,0 +1,39 @@
+@import '../colors.scss';
+
+.users_group{
+    margin-left: 20px;
+    color: #fff;
+    margin-right: 10px;
+
+    @media screen and (max-width: 570px) {
+        &{
+            width: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        &{
+            margin-top: 20px;
+        }
+        
+        & span{
+            margin-right: 10px;
+        }
+    }
+
+    input{
+        width: 50px;
+        border: 1px solid #fff;
+        text-align: center;
+        outline: none;
+        padding: 7px;
+        color: #fff;
+        background: $--app-main-color;
+
+        &::placeholder{
+            color: #fff;
+        }
+    }
+}

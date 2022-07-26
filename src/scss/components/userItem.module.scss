@@ -1,0 +1,74 @@
+@import '../colors.scss';
+
+.user{
+    padding: 10px 0;
+    border-bottom: 1px solid $--app-main-color;
+
+    &_body{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        transition: .3s;
+        padding-right: 30px;
+
+        p{
+            color: $--app-main-color;
+            font-size: 18px;
+
+            span{
+                font-weight: 600;
+            }
+        }
+
+        @media screen and (max-width: 1000px) {
+
+            &{
+                justify-self: center;
+            }
+        
+            & div,
+            & p{
+                width: 48%;
+                text-align: center;
+                padding: 0;
+            }
+        }
+
+        @media screen and (max-width: 650px) {
+        
+            & div,
+            & p{
+                width: 100%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 650px) {
+    
+        &{
+            padding-bottom: 30px;
+        }
+    }
+
+    &__phone,
+    &__email{
+        width: 30%;
+    }
+
+    &__name{
+        width: 20%;
+        padding-left: 30px;
+    }
+
+    button{
+        background-color: $--app-main-color;
+        cursor: pointer;
+        color: white;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        padding: 7px 13px;
+        margin: 0 5px;
+    }
+}
